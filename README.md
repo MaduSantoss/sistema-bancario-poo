@@ -1,63 +1,76 @@
-## 🏦 Sistema Bancário em Python
+## 🏦 Sistema Bancário em Python (POO)
 
-Este projeto implementa um sistema bancário simples em Python desenvolvido durante o Bootcamp Santander - Trilha Pyhton com a DIO, utilizando princípios de **Programação Orientada a Objetos (POO)**. Ele simula funcionalidades básicas de um banco como criação de usuários e contas, saques, depósitos e emissão de extratos.
-
----
-
-### 📋 Funcionalidades
-
-* Criar clientes (usuários).
-* Criar contas bancárias para clientes.
-* Realizar depósitos e saques.
-* Consultar extrato de movimentações.
-* Listar contas cadastradas.
+Este projeto implementa um **sistema bancário simples em Python**, desenvolvido durante o **Bootcamp Santander – Trilha Python (DIO)**.
+O foco está na aplicação prática dos **princípios de Programação Orientada a Objetos (POO)**, simulando funcionalidades essenciais de um banco, como **criação de usuários e contas**, **depósitos**, **saques** e **emissão de extratos**.
 
 ---
 
-### 🧠 Tecnologias e Conceitos Utilizados
+## 📋 Funcionalidades
 
-* Python 3.x
-* Programação Orientada a Objetos:
+* 👤 Criar clientes (usuários)
+* 🏦 Criar contas bancárias para clientes
+* 💰 Realizar depósitos
+* 💸 Realizar saques
+* 📄 Consultar extrato de movimentações
+* 📋 Listar contas cadastradas
+
+---
+
+## 🧠 Tecnologias e Conceitos Utilizados
+
+* **Python 3.x**
+* **Programação Orientada a Objetos (POO)**:
 
   * Herança
   * Encapsulamento
+  * Polimorfismo
   * Abstração com `ABC`
-  * Boas práticas com separação de responsabilidades:
+* **Boas práticas de organização**:
 
-  * Camada de modelo (`Cliente`, `Conta`, `Transacao`, etc.)
-  * Camada de interface (menus e entradas)
+  * Separação de responsabilidades
+  * Classes bem definidas para regras de negócio
 
 ---
 
-### 🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 ```text
-sistema_bancario/
-├── main.py          # Arquivo principal com o loop do sistema
-├── README.md        # Este arquivo
+sistema-bancario-poo/
+├── sistema_bancario_POO.py   # Arquivo principal do sistema
+└── README.md                 # Documentação do projeto
 ```
 
 ---
 
-### ▶️ Como Executar
+## ▶️ Como Executar
 
-1. **Pré-requisitos:**
+### Pré-requisitos
 
-   * Python 3 instalado no sistema.
+* Python **3.x** instalado no sistema
 
-2. **Clonar ou baixar o repositório.**
+### Passos
 
-3. **Executar:**
+1. Clone ou baixe este repositório.
 
-   ```bash
-   python main.py
-   ```
+2. Acesse a pasta do projeto:
+
+```bash
+cd sistema-bancario-poo
+```
+
+3. Execute o sistema:
+
+```bash
+python sistema_bancario_POO.py
+```
+
+*(ou `python3 sistema_bancario_POO.py`, dependendo do seu sistema operacional)*
 
 ---
 
-### 💻 Interface via Menu
+## 💻 Interface via Menu
 
-Ao rodar o programa, um menu é exibido com as opções:
+Ao executar o programa, um menu interativo é exibido no terminal:
 
 ```text
 =============== MENU ===============
@@ -72,24 +85,46 @@ Ao rodar o programa, um menu é exibido com as opções:
 
 ---
 
-### 👤 Clientes e Contas
+## 👤 Clientes e Contas
 
-* Um cliente é identificado pelo **CPF** e pode ter múltiplas contas.
-* Cada conta é uma instância da classe `ContaCorrente`.
-* O cliente pode escolher com qual conta deseja operar.
-
----
-
-### 📌 Regras de Negócio
-
-* Limite de saque: **R\$ 500,00** por saque.
-* Máximo de **3 saques por conta**.
-* Depósitos e saques devem ter valores **positivos**.
-* Extrato mostra todas as transações com **data e hora**.
+* Cada cliente é identificado de forma única pelo **CPF**
+* Um cliente pode possuir **múltiplas contas**
+* Cada conta é uma instância da classe `ContaCorrente`
+* O usuário pode escolher com qual conta deseja operar
 
 ---
 
-### 🛠️ Possíveis Melhorias Futuras
+## 📌 Regras de Negócio
 
-* Armazenar dados em arquivos (`JSON`, `CSV`) ou banco de dados (`SQLite`, `MySQL`).
-* Autenticação de usuários com senha.
+* 💸 **Limite de saque:** R$ 500,00 por operação
+* 🔢 **Quantidade máxima:** 3 saques por conta
+* ✅ Depósitos e saques aceitam apenas valores **positivos**
+* 📄 O extrato exibe:
+
+  * Histórico completo de transações
+  * **Data e hora**
+  * Saldo final
+
+---
+
+## 🛠️ Possíveis Melhorias Futuras
+
+* Persistência de dados em arquivos:
+
+  * `JSON`
+  * `CSV`
+* Integração com banco de dados:
+
+  * `SQLite`
+  * `MySQL`
+* Autenticação de usuários com **login e senha**
+* Interface gráfica ou versão web do sistema
+
+---
+
+## ⭐ Considerações Finais
+
+Este projeto é ideal para quem deseja praticar **POO em Python**, aplicando regras de negócio reais de forma organizada e didática.
+Ótimo para compor **portfólio de estudos** e demonstrar evolução em programação.
+
+---
